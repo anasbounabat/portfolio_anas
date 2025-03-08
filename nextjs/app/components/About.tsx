@@ -7,8 +7,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export default function AboutMe() {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
-  const textRef = useRef(null);
-  const skillsRef = useRef(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef(null);
   
   useEffect(() => {
@@ -16,67 +16,75 @@ export default function AboutMe() {
     gsap.registerPlugin(ScrollTrigger);
     
     // Main heading animation
-    gsap.fromTo(headingRef.current,
-      { x: -50, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 70%",
-          toggleActions: "play none none reverse",
+    if (headingRef.current && sectionRef.current) {
+      gsap.fromTo(headingRef.current,
+        { x: -50, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 70%",
+            toggleActions: "play none none reverse",
+          }
         }
-      }
-    );
+      );
+    }
     
     // Text paragraphs animation
-    gsap.fromTo(textRef.current.children,
-      { y: 20, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: textRef.current,
-          start: "top 80%",
-          toggleActions: "play none none reverse",
+    if (textRef.current && textRef.current.children.length > 0) {
+      gsap.fromTo([...Array.from(textRef.current.children)],
+        { y: 20, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: textRef.current,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+          }
         }
-      }
-    );
+      );
+    }
     
     // Skills items animation
-    gsap.fromTo(skillsRef.current.children,
-      { scale: 0.9, opacity: 0, y: 10 },
-      {
-        scale: 1,
-        opacity: 1,
-        y: 0,
-        duration: 0.4,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: skillsRef.current,
-          start: "top 80%",
-          toggleActions: "play none none reverse",
+    if (skillsRef.current && skillsRef.current.children.length > 0) {
+      gsap.fromTo([...Array.from(skillsRef.current.children)],
+        { scale: 0.9, opacity: 0, y: 10 },
+        {
+          scale: 1,
+          opacity: 1,
+          y: 0,
+          duration: 0.4,
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: skillsRef.current,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+          }
         }
-      }
-    );
+      );
+    }
     
     // Image animation
-    gsap.fromTo(imageRef.current,
-      { opacity: 0, y: 20 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: imageRef.current,
-          start: "top 75%",
-          toggleActions: "play none none reverse",
+    if (imageRef.current) {
+      gsap.fromTo(imageRef.current,
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: imageRef.current,
+            start: "top 75%",
+            toggleActions: "play none none reverse",
+          }
         }
-      }
-    );
+      );
+    }
     
     // Cleanup
     return () => {
@@ -105,11 +113,17 @@ export default function AboutMe() {
               </p>
               
               <p className="text-slate-400">
-                Mon approche combine rigueur technique et sens du détail pour créer des expériences digitales qui se démarquent. Je suis constamment à l'affût des nouvelles technologies et des bonnes pratiques.
+                Mon approche combine rigueur technique et sens du détail pour créer des expériences digitales qui se démarquent. Je suis constamment à l&apos;affût des nouvelles technologies et des bonnes pratiques.
               </p>
               
               <p className="text-slate-400">
-                Chaque projet est une nouvelle opportunité explorer des solutions créatives et d'améliorer l'expérience utilisateur à travers un code propre et optimisé.
+                Chaque projet est une nouvelle opportunité d&apos;explorer des solutions créatives et d&apos;améliorer l&apos;expérience utilisateur à travers un code propre et optimisé.
+              </p>
+              <p className="text-slate-400 px-4">
+                Je suis un développeur full-stack passionné et déterminé.
+              </p>
+              <p className="text-slate-400">
+                Donnons vie à vos idées ensemble !
               </p>
             </div>
             

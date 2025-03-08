@@ -39,7 +39,7 @@ export default function Landing() {
           >
             <p className="text-sm md:text-base text-white/90 leading-relaxed text-center">
               Je crée des expériences web innovantes et intuitives 
-              avec un focus sur la performance et l'élégance du design.
+              text
             </p>
           </motion.div>
         </div>

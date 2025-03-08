@@ -3,7 +3,7 @@
 import React from 'react';
 import Landing from '@/app/components/landing';
 import { Timeline } from '@/app/components/timeline'; 
-import { StickyScroll } from '@/app/components/sticky-scroll-reaveal';
+
 import About from '@/app/components/About';
 
 const timelineData = [
@@ -41,24 +41,6 @@ const timelineData = [
   }
 ];
 
-// Données pour le composant StickyScroll
-const stickyContent = [
-  {
-    title: "Développement Web",
-    description: "Je crée des sites web modernes avec les dernières technologies.",
-    content: <div className="w-full h-full bg-white/10 flex items-center justify-center text-white">Frontend</div>
-  },
-  {
-    title: "Design UI/UX",
-    description: "Je conçois des interfaces utilisateur élégantes et fonctionnelles.",
-    content: <div className="w-full h-full bg-white/10 flex items-center justify-center text-white">Design</div>
-  },
-  {
-    title: "Animation & Interactivité",
-    description: "J'intègre des animations fluides pour améliorer l'expérience utilisateur.",
-    content: <div className="w-full h-full bg-white/10 flex items-center justify-center text-white">Animation</div>
-  }
-];
 
 const HomePage: React.FC = () => {
   return (
@@ -66,7 +48,6 @@ const HomePage: React.FC = () => {
       <Landing />
       <About />
       <Timeline data={timelineData} />
-      <StickyScroll content={stickyContent} />
     </main>
   );
 };
