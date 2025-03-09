@@ -4,11 +4,10 @@ import { motion } from "framer-motion";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-800 via-purple-700 to-pink-600 text-white overflow-hidden relative">
-      {/* Background overlay */}
+    <div className=" font-mono min-h-screen bg-gradient-to-br from-blue-700 via-blue-800 to-blue-700 text-white overflow-hidden relative">
+  
       <div className="absolute inset-0 bg-black/20 z-0"></div>
-      
-      {/* Main content container */}
+    
       <div className="container mx-auto px-4 h-screen flex flex-col justify-between relative z-10">
         
         {/* Top section with "DÉVELOPPEUR" animation */}
@@ -37,9 +36,8 @@ export default function Landing() {
             transition={{ delay: 2.3, duration: 0.8 }}
             className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 max-w-md mx-auto"
           >
-            <p className="text-sm md:text-base text-white/90 leading-relaxed text-center">
-              Je crée des expériences web innovantes et intuitives 
-              text
+            <p className="text-xl  md:text-base text-white/90 leading-relaxed text-center">
+              ANAS BOUNABAT
             </p>
           </motion.div>
         </div>
@@ -62,11 +60,7 @@ export default function Landing() {
           </motion.div>
         </div>
       </div>
-      
-      {/* Decorative elements */}
-      <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-indigo-500 rounded-full filter blur-3xl opacity-30"></div>
-      <div className="absolute top-20 -right-20 w-80 h-80 bg-pink-500 rounded-full filter blur-3xl opacity-30"></div>
-      <div className="absolute top-1/2 left-1/3 w-40 h-40 bg-purple-500 rounded-full filter blur-2xl opacity-20"></div>
+    
       
       {/* Grid overlay for texture */}
       <div className="absolute inset-0 bg-grid-white/[0.03] bg-[length:30px_30px] z-[1]"></div>
