@@ -15,12 +15,7 @@ export default function Header() {
           
           {/* Navigation Links - visible on all screen sizes */}
           <nav className="flex space-x-6">
-            <Link href="/projects" className="hover:text-gray-300 transition duration-300">
-              Projets
-            </Link>
-            <Link href="/skills" className="hover:text-gray-300 transition duration-300">
-              Compétences
-            </Link>
+  
             <Link href="/contact" className="hover:text-gray-300 transition duration-300">
               Contact
             </Link>
