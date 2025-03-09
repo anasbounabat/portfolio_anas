@@ -12,8 +12,7 @@ export default function Header() {
               Anas Bounabat
             </Link>
           </div>
-          
-          {/* Navigation Links - visible on all screen sizes */}
+         
           <nav className="flex space-x-6">
   
             <Link href="/contact" className="hover:text-gray-300 transition duration-300">
