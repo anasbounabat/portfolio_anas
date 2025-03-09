@@ -1,39 +1,32 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "@/app/components/header";
-import Footer from "@/app/components/footer";
+// app/components/header.tsx
+import Link from 'next/link';
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Portfolio Anas Bounabat",
-  description: "Portfolio Anas Bounabat",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function Header() {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <header className="bg-blue-900 text-white py-4 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center">
+          {/* Logo/Brand */}
+          <div className="flex-shrink-0">
+            <Link href="/" className="font-bold text-2xl">
+              Anas Bounabat
+            </Link>
+          </div>
+          
+          {/* Navigation Links - visible on all screen sizes */}
+          <nav className="flex space-x-6">
+            <Link href="/projects" className="hover:text-gray-300 transition duration-300">
+              Projets
+            </Link>
+            <Link href="/skills" className="hover:text-gray-300 transition duration-300">
+              Compétences
+            </Link>
+            <Link href="/contact" className="hover:text-gray-300 transition duration-300">
+              Contact
+            </Link>
+          </nav>
+        </div>
+      </div>
+    </header>
   );
 }
