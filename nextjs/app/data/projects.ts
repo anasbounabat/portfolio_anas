@@ -31,33 +31,33 @@ export const projects = [
       `
     },
      {
-  id: 2,
-  title: "Application de Gestion de Propriétés avec Laravel",
-  description: "Développement d'une plateforme complète de gestion de propriétés et de réservations avec un système d'authentification Admin/User en Laravel.",
-  imageUrl: "/images/image.png",
-  tags: ["Laravel", "PHP", "MySQL", "Blade", "MVC"],
-  codeLink: "https://github.com/anasbounabat/laravel_test",
-  fullDescription: `
-  ## Application de Gestion de Propriétés et Réservations avec Laravel
+      id: 2,
+      title: "Application de Gestion de Propriétés avec Laravel",
+      description: "Développement d'une plateforme complète de gestion de propriétés et de réservations avec un système d'authentification Admin/User en Laravel.",
+      imageUrl: "/images/image.png",
+      tags: ["Laravel", "PHP", "MySQL", "Blade", "MVC"],
+      codeLink: "https://github.com/anasbounabat/laravel_test",
+      fullDescription: `
+      ## Application de Gestion de Propriétés et Réservations avec Laravel
 
-  Ce projet est une **application web développée avec Laravel**, destinée à la gestion des propriétés (appartements, maisons, etc.) ainsi que des **réservations**. 
+      Ce projet est une **application web développée avec Laravel**, destinée à la gestion des propriétés (appartements, maisons, etc.) ainsi que des **réservations**. 
 
-  ### Fonctionnalités principales :
-  - **Système d"authentification** avec rôles : distinction entre les utilisateurs standards et les administrateurs.
-  - **Gestion des propriétés** : ajout, modification, suppression et affichage des annonces.
-  - **Module de réservation** permettant aux utilisateurs de réserver des biens disponibles.
-  - **Tableau de bord Admin** pour superviser l'ensemble des données (utilisateurs, propriétés, réservations).
-  
-  ### Ce que j'ai appris :
-  - Mise en pratique du **pattern MVC avec Laravel**.
-  - Gestion des **relations entre modèles Eloquent** (utilisateurs, propriétés, réservations).
-  - Sécurité et gestion des droits d'accès selon les rôles.
-  - Utilisation efficace des **Blade templates** pour une interface propre et dynamique.
+      ### Fonctionnalités principales :
+      - **Système d"authentification** avec rôles : distinction entre les utilisateurs standards et les administrateurs.
+      - **Gestion des propriétés** : ajout, modification, suppression et affichage des annonces.
+      - **Module de réservation** permettant aux utilisateurs de réserver des biens disponibles.
+      - **Tableau de bord Admin** pour superviser l'ensemble des données (utilisateurs, propriétés, réservations).
+      
+      ### Ce que j'ai appris :
+      - Mise en pratique du **pattern MVC avec Laravel**.
+      - Gestion des **relations entre modèles Eloquent** (utilisateurs, propriétés, réservations).
+      - Sécurité et gestion des droits d'accès selon les rôles.
+      - Utilisation efficace des **Blade templates** pour une interface propre et dynamique.
 
-  Ce projet m'a permis de renforcer mes compétences en **développement backend avec Laravel** tout en construisant une application complète et structurée.
+      Ce projet m'a permis de renforcer mes compétences en **développement backend avec Laravel** tout en construisant une application complète et structurée.
 
-  Vous pouvez consulter le code source ici : [GitHub](https://github.com/anasbounabat/laravel_test)
-  `
+      Vous pouvez consulter le code source ici : [GitHub](https://github.com/anasbounabat/laravel_test)
+      `
 },
     {
       id: 3,
