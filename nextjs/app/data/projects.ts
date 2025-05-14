@@ -30,36 +30,35 @@ export const projects = [
         💡 **Je suis toujours ouvert à discuter de la création de thèmes WordPress ou de projets similaires !** 🚀
       `
     },
-    {
-      id: 2,
-  title: "Vélo'Cité - Site Web pour la Mobilité Durable",
-  description: "Développement d'un site web pour Vélo'Cité, une initiative visant à promouvoir une mobilité urbaine plus durable.",
-  imageUrl: "/images/sitept.png",
-  tags: ["HTML", "CSS", "JavaScript", "Git"],
-  codeLink: "https://github.com/username/velo-cite",
+     {
+  id: 2,
+  title: "Application de Gestion de Propriétés avec Laravel",
+  description: "Développement d'une plateforme complète de gestion de propriétés et de réservations avec un système d'authentification Admin/User en Laravel.",
+  imageUrl: "/images/image.png",
+  tags: ["Laravel", "PHP", "MySQL", "Blade", "MVC"],
+  codeLink: "https://github.com/anasbounabat/laravel_test",
   fullDescription: `
-    ## Vélo'Cité - Site Web pour la Mobilité Durable
+  ## Application de Gestion de Propriétés et Réservations avec Laravel
 
-    Avec André, nous avons créé un site web pour Vélo'Cité, une initiative visant à promouvoir une mobilité urbaine plus durable
-     en facilitant l'accès à la location de vélos dans la ville.
+  Ce projet est une **application web développée avec Laravel**, destinée à la gestion des propriétés (appartements, maisons, etc.) ainsi que des **réservations**. 
 
-    ## Technologies utilisées  
-    - **HTML** pour structurer le contenu du site  
-    - **CSS** pour personnaliser et styliser le design  
-    - **JavaScript** pour ajouter des interactions et dynamiser l'expérience utilisateur  
-    - **Git** pour la gestion du code source et la collaboration  
+  ### Fonctionnalités principales :
+  - **Système d"authentification** avec rôles : distinction entre les utilisateurs standards et les administrateurs.
+  - **Gestion des propriétés** : ajout, modification, suppression et affichage des annonces.
+  - **Module de réservation** permettant aux utilisateurs de réserver des biens disponibles.
+  - **Tableau de bord Admin** pour superviser l'ensemble des données (utilisateurs, propriétés, réservations).
+  
+  ### Ce que j'ai appris :
+  - Mise en pratique du **pattern MVC avec Laravel**.
+  - Gestion des **relations entre modèles Eloquent** (utilisateurs, propriétés, réservations).
+  - Sécurité et gestion des droits d'accès selon les rôles.
+  - Utilisation efficace des **Blade templates** pour une interface propre et dynamique.
 
-    ## Fonctionnalités  
-    - Site web simple et fonctionnel pour la promotion de la mobilité durable  
-    - Design responsive pour une utilisation optimale sur tous les appareils  
-    - Intégration d'informations et de services relatifs à la location de vélos  
-    - Gestion et suivi des projets via Git pour un travail collaboratif efficace  
+  Ce projet m'a permis de renforcer mes compétences en **développement backend avec Laravel** tout en construisant une application complète et structurée.
 
-    Ce projet a été une belle expérience de collaboration, et nous sommes fiers d'avoir contribué à une initiative qui soutient
-     une mobilité plus verte et plus accessible.
-
+  Vous pouvez consulter le code source ici : [GitHub](https://github.com/anasbounabat/laravel_test)
   `
-    },
+},
     {
       id: 3,
       title: "Convertisseur de Devises avec API et Git",
