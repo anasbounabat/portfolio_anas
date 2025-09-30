@@ -91,7 +91,7 @@ export default function AboutMe() {
            
 
 <p className="text-slate-200">
-  Je appelle Anas Bounabat, j'ai 21 ans et je suis étudiant à l IIM, me spécialisant dans le développement web full-stack. Mon objectif est de devenir un développeur capable de concevoir des applications modernes, performantes et intuitives.
+  Je m&apos;appelle Anas Bounabat, j&apos;ai 21 ans et je suis étudiant à l&apos;IIM, me spécialisant dans le développement web full-stack. Mon objectif est de devenir un développeur capable de concevoir des applications modernes, performantes et intuitives.
 </p>
 
 <p className="text-slate-200">

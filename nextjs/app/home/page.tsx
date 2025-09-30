@@ -46,8 +46,8 @@ const timelineData = [
     <div className="prose dark:prose-invert">
       <p className="text-xl font-semibold">Bourse aux Projets : Développeur Web Front-end</p>
       <ul className="list-disc pl-5">
-        <li>Développement de l'interface Front-end en React avec TailwindCSS</li>
-        <li>Collaboration avec l'équipe X-UI pour une interface immersive via Figma</li>
+        <li>Développement de l&apos;interface Front-end en React avec TailwindCSS</li>
+        <li>Collaboration avec l&apos;équipe X-UI pour une interface immersive via Figma</li>
         <li>Gestion du projet avec méthodologies Agile via Trello</li>
       </ul>
     </div>
@@ -62,7 +62,7 @@ const timelineData = [
       <ul className="list-disc pl-5">
         <li>Application des méthodologies Agile et Design Thinking</li>
         <li>Élaboration des cahiers des charges et rédaction des comptes rendus </li>
-        <li>Management d'une équipe pluridisciplinaire de 10 personnes</li>
+        <li>Management d&apos;une équipe pluridisciplinaire de 10 personnes</li>
       </ul>
     </div>
   )
@@ -75,7 +75,7 @@ const timelineData = [
       <ul className="list-disc pl-5">
         <li>Développement du backend avec Laravel (Eloquent, API Rest, Livewire, Filament)</li>
         <li>Intégration des composants front avec Vue.js et optimisation des performances</li>
-        <li>Conception d'APIs Rest et modélisation des données</li>
+        <li>Conception d&apos;APIs Rest et modélisation des données</li>
       </ul>
     </div>
   )
