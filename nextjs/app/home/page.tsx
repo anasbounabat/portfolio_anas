@@ -13,26 +13,73 @@ const timelineData = [
     title: "2019-2022",
     content: (
       <div className="prose dark:prose-invert">
-        <p>Lycée Jean Zay Baccalauréat (Mathématiques et Physique-Chimie)</p>
+        <p className="text-xl font-bold">
+            Lycée Jean Zay</p>
+        <p>Baccalauréat (Mathématiques et Physique-Chimie)</p>
       </div>
     )
-  },
+  }, 
   {
     title: "2022-2023",
     content: (
       <div className="prose dark:prose-invert">
-        <p>Université Sorbonne Paris Nord Licence 1 en SPI</p>
+        <p className="text-xl font-bold">
+            Université Sorbonne Paris Nord </p>
+        <p>Licence 1 en SPI</p>
       </div>
     )
-  },
+  }, 
   {
     title: "2023-NOW",
     content: (
       <div className="prose dark:prose-invert">
-        <p> IIM digital school Bachelor en coding & digital innovation</p>
+        <p className="text-xl font-bold">
+            IIM Digital School
+        </p>
+        <p>Bachelor en Coding & Digital Innovation</p>
       </div>
     )
   }, 
+  {
+  title: "Oct-dec 2024",
+  content: (
+    <div className="prose dark:prose-invert">
+      <p className="text-xl font-semibold">Bourse aux Projets : Développeur Web Front-end</p>
+      <ul className="list-disc pl-5">
+        <li>Développement de l'interface Front-end en React avec TailwindCSS</li>
+        <li>Collaboration avec l'équipe X-UI pour une interface immersive via Figma</li>
+        <li>Gestion du projet avec méthodologies Agile via Trello</li>
+      </ul>
+    </div>
+  )
+},
+
+  {
+  title: "Jan-mar 2025",
+  content: (
+    <div className="prose dark:prose-invert">
+      <p className="text-xl  font-semibold">Bourse aux Projets : Chef de projet</p>
+      <ul className="list-disc pl-5">
+        <li>Application des méthodologies Agile et Design Thinking</li>
+        <li>Élaboration des cahiers des charges et rédaction des comptes rendus </li>
+        <li>Management d'une équipe pluridisciplinaire de 10 personnes</li>
+      </ul>
+    </div>
+  )
+},
+ {
+  title: "Avr-Juin 2025",
+  content: (
+    <div className="prose dark:prose-invert">
+      <p className="text-xl  font-semibold">Stagiaire Dev Full-Stack InnovQube</p>
+      <ul className="list-disc pl-5">
+        <li>Développement du backend avec Laravel (Eloquent, API Rest, Livewire, Filament)</li>
+        <li>Intégration des composants front avec Vue.js et optimisation des performances</li>
+        <li>Conception d'APIs Rest et modélisation des données</li>
+      </ul>
+    </div>
+  )
+},
 ];
 
 const HomePage: React.FC = () => {

@@ -70,11 +70,11 @@ export default function AboutMe() {
   }, []);
   
   const skills = [
-    "HTML", "CSS", "JavaScript", "PHP",
-    "Node.js", "MySQL",
-    "React.js", "Next.js",
-    "WordPress", "Tailwind CSS",
-    "UI/UX Design"
+      "HTML", "CSS", "JavaScript","TypeScript","PHP",
+      "Node.js", "MySQL","Symfony","Laravel",
+      "React.js", "Next.js","Vue.js","N8N",
+      "WordPress", "Tailwind CSS",
+      "UI/UX Design"
   ];
   
   
@@ -91,7 +91,7 @@ export default function AboutMe() {
            
 
 <p className="text-slate-200">
-  Je appelle Anas Bounabat, j ai 20 ans et je suis étudiant à l IIM, me spécialisant dans le développement web full-stack. Mon objectif est de devenir un développeur capable de concevoir des applications modernes, performantes et intuitives.
+  Je appelle Anas Bounabat, j'ai 21 ans et je suis étudiant à l IIM, me spécialisant dans le développement web full-stack. Mon objectif est de devenir un développeur capable de concevoir des applications modernes, performantes et intuitives.
 </p>
 
 <p className="text-slate-200">
@@ -103,7 +103,7 @@ export default function AboutMe() {
 </p>
 
 <p className="text-slate-200 ">
-  Curieux et déterminé, j aime relever des défis et collaborer sur des projets ambitieux. Que ce soit en front-end ou en back-end, je mets un point d honneur à créer des produits fonctionnels et esthétiques.
+ Curieux et déterminé, j’aime relever des défis et collaborer sur des projets ambitieux. Que ce soit en front-end ou en back-end, je m’efforce de concevoir des solutions efficaces, intuitives et visuellement attractives.
 </p>
 
 
